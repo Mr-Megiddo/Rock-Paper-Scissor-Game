@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link href="/Images/favicon.jpg" rel="icon">
+  <link href="RPS.css" rel="stylesheet">
+  <script src="RPS.js" defer></script>
+</head>
+<body>
+  <main class="containerBG">
+    <nav class="keyNote">Let's Play Rock Paper & Scissors</nav>
+    <section class="playSection">
+      <button class="Rock"
+      onclick="playGame('Rock')"
+      ></button>
+      <button class="Paper"
+      onclick="playGame('Paper')"></button>
+      <button class="Scissors"
+      onclick="playGame('Scissors')"
+      ></button>
+    </section>
+    <aside class="resultSection" id="result">
+
+    </aside>
+    <footer id="footer">
+      <p>Wins : 0</p>
+      <p>Losses : 0</p>
+      <p>Ties : 0</p>
+    </footer>
+    <div class="bottom">
+      <button onclick="resetScore()" id="reButton">
+        Reset
+      </button>
+    </div>
+  </main>
+</body>
+</html>
