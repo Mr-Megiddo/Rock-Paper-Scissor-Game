@@ -19,7 +19,7 @@
 
     if(myMove === "scissors"){
       computerMove === "Scissors" ? result="Tied"
-      : computerMove === "Rock" ? result="You lost"
+      : computerMove === "Rock" ? result="You Lost"
       : result = "You win"
     }
     else if(myMove === "rock"){
@@ -42,7 +42,7 @@
       score.wins = score.wins += 1;
     }else if(result === "You Lost"){
       score.losses = score.losses += 1;
-    }else{
+    }else if(result === 'Tied'){
       score.ties = score.ties += 1;
     }
 
